@@ -1,0 +1,119 @@
+<!-- /index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Basmah Vania</title>
+  <meta name="description" content="World-class portfolio showcasing selected projects with tasteful parallax and motion." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#ff6fb1" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/app.css" />
+  <script src="./assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="container" aria-label="Top">
+    <a href="#about">About</a>
+    <div class="right">
+      <span class="dot" aria-hidden="true"></span>
+      <a href="#projects">Projects</a>
+      <span class="dot" aria-hidden="true"></span>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Intro">
+    <div class="layer bg-grad" data-parallax data-speed="0.06" aria-hidden="true"></div>
+
+    <!-- Single hero frame -->
+    <div class="layer photo" data-parallax data-speed="0.20" aria-hidden="true">
+      <div class="frame">
+        <!-- Liquid shader canvas -->
+        <div class="layer liquid-mount" id="liquidMount" aria-hidden="true">
+          <canvas id="liquidCanvas"></canvas>
+        </div>
+
+        <div class="overlay layer" style="inset:0"></div>
+      </div>
+    </div>
+
+    <div class="title" data-parallax data-speed="-0.10">
+      <h1><span>BASMAH</span><span>VANIA</span></h1>
+      <div class="intro">
+        <div class="pill">Intro 01</div>
+        <p style="margin:.5rem 0 0 0">I’m <strong>Basmah Vania</strong> — a software engineering student.</p>
+        <a class="cta" href="#projects">Scroll through cases ↓</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <div>Scroll</div>
+      <div class="bar"></div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS START ==================== -->
+  <section id="projects" class="section projects" aria-labelledby="projects-title">
+    <div class="projects-head container">
+      <h2 id="projects-title">Selected Projects</h2>
+      <p class="lead">A flexible grid with oversized tiles and a crisp modular backdrop.</p>
+    </div>
+
+    <!-- Full-bleed stage with static white grid background -->
+    <div class="projects-stage" aria-hidden="true"></div>
+
+    <!-- Tiles injected by JS -->
+    <div class="projects-grid" id="projectGrid"></div>
+  </section>
+  <!-- ===================== PROJECTS END ===================== -->
+
+  <!-- ABOUT -->
+  <section id="about" class="section container" aria-labelledby="about-title">
+    <h2 id="about-title">I Am</h2>
+    <div class="about">
+      <div>
+        <div class="pill">Bio</div>
+        <p class="lead">A future software engineer studying at the University of Bradford. I want to gain more experience creating real-world solutions. I love design, tennis, food and gaming.</p>
+        <div class="stack">
+          <span class="chip">Design Systems</span>
+          <span class="chip">Interaction</span>
+          <span class="chip">Accessibility</span>
+          <span class="chip">Web Design</span>
+          <span class="chip">Brand</span>
+        </div>
+      </div>
+      <div>
+        <div class="pill">Languages</div>
+        <div class="stack" aria-label="Capabilities">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">PHP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <p class="lead">Have a brief or just curious? Let’s talk.</p>
+    <p>
+      <a class="pill" href="mailto:vaniabasmah@gmail.com">EMAIL</a>
+      &nbsp;·&nbsp;<a class="pill" href="https://www.linkedin.com/in/basmahvania" target="_blank" rel="noopener">LinkedIn</a>
+      &nbsp;·&nbsp;<a class="pill" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Basmah Vania. Crafted with care.</div>
+  </footer>
+</body>
+</html>
