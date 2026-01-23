@@ -368,7 +368,7 @@ header .right{display:flex; gap:.5rem; align-items:center}
   transform: translateY(-1px);
 }
 
-/* Add space between the two groups inside About (Design Systems -> Languages) */
-#about .about > div:first-child .pill + .stack{
-  margin-bottom: 1.25rem;  /* space after Design Systems chips */
+/* Space between the end of one chip stack and the next pill (e.g., Design Systems -> Languages) */
+#about .stack + .pill{
+  margin-top: 1.25rem;
 }
