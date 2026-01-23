@@ -367,3 +367,8 @@ header .right{display:flex; gap:.5rem; align-items:center}
 .pill-link:hover{
   transform: translateY(-1px);
 }
+
+/* Add space between the two groups inside About (Design Systems -> Languages) */
+#about .about > div:first-child .pill + .stack{
+  margin-bottom: 1.25rem;  /* space after Design Systems chips */
+}
