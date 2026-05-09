@@ -4,30 +4,42 @@
 // ---------------- Projects data (3 real pages) ----------------
 const projects = [
   {
-    title: "Tic-Tac-Toe (AI)",
+    title: "Real-Time Weather Dashboard",
+    tag: "Data Dashboard",
+    description: "Interactive Python dashboard for cleaning, analysing and visualising weather-station data with alerts and trend comparisons.",
+    img: "assets/img/weather-dashboard.jpg",
+    live: "#",
+    code: "https://github.com/21baz/weather-app",
+    tech: ["Python", "FastAPI", "Panel", "Pandas"]
+  },
+  {
+    title: "Tic-Tac-Toe AI",
     tag: "Web Game",
-    description: "Pastel Tic-Tac-Toe with AI difficulty levels, custom colours, and win confetti.",
-    img: "assets/img/pending.jpeg",
+    description: "Browser game with AI difficulty levels, custom colours, dynamic game logic and win animations.",
+    img: "assets/img/tictactoe.jpg",
     live: "https://21baz.github.io/tic-tac-toe-ai/",
     code: "https://github.com/21baz/tic-tac-toe-ai",
     tech: ["HTML", "CSS", "JavaScript"]
-  },  
-  {
-    title: "Sports E-Commerce Site (PENDING...)",
-    desc: "Group PHP project with sports categories and animated hero.",
-    url: "./project-sports-shop.html",
-    img: "assets/img/construction.jpg",
-    tags: ["PHP", "HTML", "CSS"]
   },
   {
-    title: "DIGM Activity / CSV Manager(PENDING...)",
-    desc: "Java GUI to view, edit and reassign shared event data.",
-    url: "./project-digm-tool.html",
-    img: "assets/img/constuction.jpg",
-    tags: ["Java", "CSV", "GUI"]
+    title: "Sports E-Commerce Website",
+    tag: "Full-Stack Web App",
+    description: "Group-built sports shop with product pages, customer management and database-backed features.",
+    img: "assets/img/sports-shop.jpg",
+    live: "./project-sports-shop.html",
+    code: "#",
+    tech: ["PHP", "HTML", "CSS", "MySQL"]
+  },
+  {
+    title: "DIGM Activity Manager",
+    tag: "Java Desktop App",
+    description: "Java GUI tool for viewing, editing and reassigning shared event records stored in CSV files.",
+    img: "assets/img/digm-tool.jpg",
+    live: "./project-digm-tool.html",
+    code: "#",
+    tech: ["Java", "CSV", "GUI"]
   }
 ];
-
 const grid  = document.getElementById('projectGrid');
 const yearEl = document.getElementById('year');
 
