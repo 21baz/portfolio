@@ -53,36 +53,52 @@ function renderProjects(items){
     card.setAttribute('data-parallax','');
     card.setAttribute('data-speed', (0.06 + (i%3)*0.02).toFixed(2));
 
-    // If the project has live+code, render the 3-thing card (name + two links)
+    // If the project has live+code, render project card with image + links
     if (p.live && p.code) {
+    
+      // Background image
+      const bg = document.createElement('div');
+      bg.className = 'bg';
+      bg.style.backgroundImage = `url('${p.img}')`;
+    
+      // Meta container
       const meta = document.createElement('div');
       meta.className = 'meta';
-
+    
+      // Left side (title)
       const left = document.createElement('div');
+    
       const h3 = document.createElement('h3');
       h3.textContent = p.title;
+    
       left.append(h3);
-
+    
+      // Links container
       const links = document.createElement('div');
       links.className = 'project-links';
-
+    
+      // Live demo button
       const live = document.createElement('a');
       live.className = 'pill-link';
       live.href = p.live;
       live.target = '_blank';
       live.rel = 'noopener';
       live.textContent = 'Live demo →';
-
+    
+      // Code button
       const code = document.createElement('a');
       code.className = 'pill-link';
       code.href = p.code;
       code.target = '_blank';
       code.rel = 'noopener';
       code.textContent = 'Code →';
-
+    
       links.append(live, code);
       meta.append(left, links);
-      card.append(meta);
+    
+      // Add image + content to card
+      card.append(bg, meta);
+    
       frag.appendChild(card);
       return;
     }
