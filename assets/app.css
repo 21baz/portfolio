@@ -153,11 +153,12 @@ header .right{display:flex; gap:.5rem; align-items:center}
 .project-card:hover .bg{ transform: scale(1.08); filter: contrast(1.12) saturate(1.12); }
 
 .project-card::before{
-  content:""; position:absolute; inset:0;
+  content:"";
+  position:absolute;
+  inset:0;
   background:
-    radial-gradient(120% 90% at 50% 10%, rgba(0,0,0,.0) 0%, rgba(0,0,0,.25) 75%),
-    linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,.55) 100%);
-  pointer-events:none;
+    radial-gradient(120% 90% at 50% 10%, rgba(0,0,0,0) 0%, rgba(0,0,0,.10) 75%),
+    linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.30) 100%);
 }
 
 /* Bottom info bar */
