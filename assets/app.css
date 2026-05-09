@@ -161,6 +161,23 @@ header .right{display:flex; gap:.5rem; align-items:center}
     linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.30) 100%);
 }
 
+.project-card .bg{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.project-card::before{
+  z-index: 1;
+}
+
+.project-card .meta{
+  z-index: 2;
+}
+
 /* Bottom info bar */
 .project-card .meta{
   position:absolute; left:0; right:0; bottom:0;
