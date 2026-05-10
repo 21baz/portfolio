@@ -50,8 +50,6 @@ function renderProjects(items){
   items.forEach((p, i) => {
     const card = document.createElement('article');
     card.className = `project-card reveal ${spans[i] || 'sp-wide'}`;
-    card.setAttribute('data-parallax','');
-    card.setAttribute('data-speed', (0.06 + (i%3)*0.02).toFixed(2));
 
     // If the project has live+code, render project card with image + links
     if (p.live && p.code) {
