@@ -144,13 +144,13 @@ header .right{display:flex; gap:.5rem; align-items:center}
 
 /* only image zooms */
 .project-card .bg{
-  position:absolute; inset:0;
-  background-size:cover; background-position:center;
-  filter: contrast(1.05) saturate(1.05);
-  transform: scale(1.03);
-  transition: transform .6s ease, filter .6s ease;
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background-size:cover;
+  background-position:center;
+  transition: opacity .25s ease;
 }
-.project-card:hover .bg{ transform: scale(1.08); filter: contrast(1.12) saturate(1.12); }
 
 .project-card::before{
   content:"";
