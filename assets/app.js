@@ -9,7 +9,7 @@ const projects = [
     description: "Interactive Python dashboard for cleaning, analysing and visualising weather-station data with alerts and trend comparisons.",
     img: "assets/img/weather-dashboard.jpg",
     live: "https://bradford-weather-dashboard-xgg6cmuetwzafs9drjpngj.streamlit.app",
-    code: "https://github.com/21baz/weather-app",
+    code: "https://github.com/21baz/bradford-weather-dashboard",
     tech: ["Python", "FastAPI", "Panel", "Pandas"]
   },
   {
